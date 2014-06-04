@@ -1,31 +1,73 @@
 // bower:scss
 // endbower
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 body {
-    background: #fafafa;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333;
+  margin: 0 0;
+  background: #fafafa;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;   
 }
 
-.hero-unit {
-    margin: 50px auto 0 auto;
+.left-column {
+  float: left;
+  width: 20%;
+}
+
+ .container {
+  width: 60%;
+  margin: 0 auto;
+  padding: 60px;
+  background: #cccccc;
+ }
+ 
+.right-column {
+  float: right;
+  width: 20%
+}
+
+.task {
+    display: inline-block;
+    font-size: 20px;
     width: 300px;
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 30px;
-    background-color: #eee;
-    border-radius: 6px;
-    padding: 60px;
-    h1 {
-        font-size: 60px;
-        line-height: 1;
-        letter-spacing: -1px;
+ 
+    input {
+        padding: 4px;
+        width: 250px;
+        font-size: 20px;
+ 
+        &.changed {
+            background: rgb(181, 255, 177);
+        }
     }
 }
+ 
+.button {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+ 
+.save-button {
+    color: green;
+    border: 2px solid green;
+}
 
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+.add-button {
+    color: pink ;
+    border: 2px solid green;
+}
+ 
+.delete-button {
+    color: red;
+    border: 2px solid red;
+}
+ 
+.edit-button {
+    color: blue;
+    border: 2px solid blue;
 }
