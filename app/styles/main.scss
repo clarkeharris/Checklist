@@ -18,7 +18,7 @@ body {
   width: 20%;
 }
 
- .container {
+ .center-column {
   width: 60%;
   margin: 0 auto;
   padding: 60px;
@@ -29,7 +29,7 @@ body {
   float: right;
   width: 20%
 }
-
+ 
 .task {
     display: inline-block;
     font-size: 20px;
@@ -51,14 +51,13 @@ body {
     padding: 10px 30px;
     cursor: pointer;
 }
- 
+
+.add-new {
+  color: green;
+  border: 2px solid green;
+}
 .save-button {
     color: green;
-    border: 2px solid green;
-}
-
-.add-button {
-    color: pink ;
     border: 2px solid green;
 }
  

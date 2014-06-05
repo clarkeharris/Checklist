@@ -20,16 +20,27 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div class="left-column"></div>
-        <div class="container">
-            <div class="submit-task"></div>
+        <div class="center-column">
+            <div class="add-new button">Add</div>
+            <input type="text" placeholder="Enter task" class="add-new-input"></input>      
         </div>
+
+        <div class="submit-task"></div>
        <div class="right-column"></div>
 
         <!-- build:js scripts/vendor.js -->
-    
-         <script type="text/template" class="checklist-item">
-            <span class="task"><input type="text" placeholder="Enter a task..." value="<%= task %>"></span>
-            <span class="add-button button">Add</span>
+        
+        <script type="text/template" class="user-list-item">
+            <span class="task"><%= task ? task : "Sloth" %></span>
+            <span class="edit-button button">edit</span>
+            <span class="delete-button button">delete</span>
+        </script>
+ 
+ 
+        <script type="text/template" class="user-list-edit-item">
+            <span class="task"><input type="text" value="<%= task %>"></span>
+            <span class="save-button button">save</span>
+            <span class="delete-button button">delete</span>
         </script>
 
         <!-- bower:js -->
